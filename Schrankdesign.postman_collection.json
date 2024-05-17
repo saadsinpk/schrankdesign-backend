@@ -1,0 +1,962 @@
+{
+	"info": {
+		"_postman_id": "3480be9d-d498-44a2-a482-99a7bede0770",
+		"name": "Schrankdesign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25248786",
+		"_collection_link": "https://planetary-sunset-96868.postman.co/workspace/Team-Workspace~6584aa97-d6b7-4841-8c11-f1ec40ec90f6/collection/25248786-3480be9d-d498-44a2-a482-99a7bede0770?action=share&source=collection_link&creator=25248786"
+	},
+	"item": [
+		{
+			"name": "Plates",
+			"item": [
+				{
+					"name": "plateCreate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/Welcome/Downloads/AppBanner.png"
+								},
+								{
+									"key": "configId",
+									"value": "0001",
+									"type": "text"
+								},
+								{
+									"key": "plate_cost",
+									"value": "2500",
+									"type": "text"
+								},
+								{
+									"key": "price_increase",
+									"value": "500+",
+									"type": "text"
+								},
+								{
+									"key": "supplier_Id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "plate_length",
+									"value": "25cm",
+									"type": "text"
+								},
+								{
+									"key": "plate_width",
+									"value": "15width",
+									"type": "text"
+								},
+								{
+									"key": "plate_thickness",
+									"value": "25ft",
+									"type": "text"
+								},
+								{
+									"key": "plate_sort",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "BackP_Id_match",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "wahab",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/plates/createplates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"plates",
+								"createplates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update plate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/Welcome/Downloads/image 69.png"
+								},
+								{
+									"key": "name",
+									"value": "hamza123",
+									"type": "text"
+								},
+								{
+									"key": "configId",
+									"value": "0001",
+									"type": "text"
+								},
+								{
+									"key": "plate_cost",
+									"value": "2500",
+									"type": "text"
+								},
+								{
+									"key": "price_increase",
+									"value": "500+",
+									"type": "text"
+								},
+								{
+									"key": "supplier_Id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "plate_length",
+									"value": "25cm",
+									"type": "text"
+								},
+								{
+									"key": "plate_width",
+									"value": "15width",
+									"type": "text"
+								},
+								{
+									"key": "plate_thickness",
+									"value": "25ft",
+									"type": "text"
+								},
+								{
+									"key": "plate_sort",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "BackP_Id_match",
+									"value": "25",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/plates/updateplates/65c5f4c9ee0e69e9bf16a61e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"plates",
+								"updateplates",
+								"65c5f4c9ee0e69e9bf16a61e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get plates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/plates/getplates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"plates",
+								"getplates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete plates",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/plates/deleteplates/65c5f0bf982e6b2f4cbdf2bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"plates",
+								"deleteplates",
+								"65c5f0bf982e6b2f4cbdf2bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "plateCreate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.18.167:8081/api/v1/plate/plate-create",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"18",
+								"167"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"plate",
+								"plate-create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Edges",
+			"item": [
+				{
+					"name": "update Edge",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/Welcome/Downloads/image 69.png"
+								},
+								{
+									"key": "name",
+									"value": "aacac",
+									"type": "text"
+								},
+								{
+									"key": "configId",
+									"value": "0001",
+									"type": "text"
+								},
+								{
+									"key": "edge_cost",
+									"value": "2500",
+									"type": "text"
+								},
+								{
+									"key": "price_aufschlag",
+									"value": "500+",
+									"type": "text"
+								},
+								{
+									"key": "supplier_Id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "plate_Id_match",
+									"value": "25cm",
+									"type": "text"
+								},
+								{
+									"key": "edge_width",
+									"value": "15width",
+									"type": "text"
+								},
+								{
+									"key": "edge_thickness",
+									"value": "25ft",
+									"type": "text"
+								},
+								{
+									"key": "edge_type",
+									"value": "abc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/edges/updateEdge/65c60aae653cd3640bc77567",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"edges",
+								"updateEdge",
+								"65c60aae653cd3640bc77567"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Edge",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/Welcome/Downloads/image 69.png"
+								},
+								{
+									"key": "name",
+									"value": "wahab",
+									"type": "text"
+								},
+								{
+									"key": "configId",
+									"value": "0001",
+									"type": "text"
+								},
+								{
+									"key": "edge_cost",
+									"value": "2500",
+									"type": "text"
+								},
+								{
+									"key": "price_aufschlag",
+									"value": "500+",
+									"type": "text"
+								},
+								{
+									"key": "supplier_Id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "plate_Id_match",
+									"value": "25cm",
+									"type": "text"
+								},
+								{
+									"key": "edge_width",
+									"value": "15width",
+									"type": "text"
+								},
+								{
+									"key": "edge_thickness",
+									"value": "25ft",
+									"type": "text"
+								},
+								{
+									"key": "edge_type",
+									"value": "abc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/edges/createEdge",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"edges",
+								"createEdge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get plates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/edges/getEdges",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"edges",
+								"getEdges"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete plates",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/edges/deleteEdge/65c60aae653cd3640bc77567",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"edges",
+								"deleteEdge",
+								"65c60aae653cd3640bc77567"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plates Type",
+			"item": [
+				{
+					"name": "plateCreate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "wahab",
+									"type": "text"
+								},
+								{
+									"key": "config[0]",
+									"value": "Wardrobe",
+									"type": "text"
+								},
+								{
+									"key": "config[1]",
+									"value": "Sideboards",
+									"type": "text"
+								},
+								{
+									"key": "config[2]",
+									"value": "Wash-table",
+									"type": "text"
+								},
+								{
+									"key": "config[3]",
+									"value": "Sideboards",
+									"type": "text"
+								},
+								{
+									"key": "edge[0]",
+									"value": "V",
+									"type": "text"
+								},
+								{
+									"key": "edge[1]",
+									"value": "H",
+									"type": "text"
+								},
+								{
+									"key": "edge[2]",
+									"value": "CV",
+									"type": "text"
+								},
+								{
+									"key": "edge[3]",
+									"value": "HR",
+									"type": "text"
+								},
+								{
+									"key": "edge[4]",
+									"value": "VHLP",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/platestypes/createplatesTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"platestypes",
+								"createplatesTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get plates Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/platesTypes/getplatesTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"platesTypes",
+								"getplatesTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete plates",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/platestypes/deleteplatesTypes/65c6018c340762cbe09d87a3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"platestypes",
+								"deleteplatesTypes",
+								"65c6018c340762cbe09d87a3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update plate types",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "wahab13",
+									"type": "text"
+								},
+								{
+									"key": "config[0]",
+									"value": "Wardrobe",
+									"type": "text"
+								},
+								{
+									"key": "config[1]",
+									"value": "Sideboards",
+									"type": "text"
+								},
+								{
+									"key": "config[2]",
+									"value": "Wash-table",
+									"type": "text"
+								},
+								{
+									"key": "config[3]",
+									"value": "Sideboards",
+									"type": "text"
+								},
+								{
+									"key": "edge[0]",
+									"value": "V",
+									"type": "text"
+								},
+								{
+									"key": "edge[1]",
+									"value": "H",
+									"type": "text"
+								},
+								{
+									"key": "edge[2]",
+									"value": "CV",
+									"type": "text"
+								},
+								{
+									"key": "edge[3]",
+									"value": "HR",
+									"type": "text"
+								},
+								{
+									"key": "edge[4]",
+									"value": "VHLP",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/platestypes/updateplatesTypes/65c6018c340762cbe09d87a3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"platestypes",
+								"updateplatesTypes",
+								"65c6018c340762cbe09d87a3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "Drawer",
+					"item": [
+						{
+							"name": "create Drawers",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "images",
+											"type": "file",
+											"src": "/C:/Users/Welcome/Downloads/image 69.png"
+										},
+										{
+											"key": "name",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "configId",
+											"value": "000385",
+											"type": "text"
+										},
+										{
+											"key": "hersteller_Id",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "price_einkauf",
+											"value": "25,000",
+											"type": "text"
+										},
+										{
+											"key": "price_aufschlag",
+											"value": "2555",
+											"type": "text"
+										},
+										{
+											"key": "price_verkauf",
+											"value": "045454",
+											"type": "text"
+										},
+										{
+											"key": "profit_pro_pcs",
+											"value": "120",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/assests/createDrawers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"assests",
+										"createDrawers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Drawers",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "images",
+											"type": "file",
+											"src": "/C:/Users/Welcome/Downloads/image 69.png"
+										},
+										{
+											"key": "name",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "configId",
+											"value": "000385",
+											"type": "text"
+										},
+										{
+											"key": "hersteller_Id",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "price_einkauf",
+											"value": "25,000",
+											"type": "text"
+										},
+										{
+											"key": "price_aufschlag",
+											"value": "30,555",
+											"type": "text"
+										},
+										{
+											"key": "price_verkauf",
+											"value": "2300",
+											"type": "text"
+										},
+										{
+											"key": "profit_pro_pcs",
+											"value": "25%",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/assests/getDrawers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"assests",
+										"getDrawers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Drawers",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "images",
+											"type": "file",
+											"src": "/C:/Users/Welcome/Downloads/image 69.png"
+										},
+										{
+											"key": "name",
+											"value": "abcddd",
+											"type": "text"
+										},
+										{
+											"key": "configId",
+											"value": "000385",
+											"type": "text"
+										},
+										{
+											"key": "hersteller_Id",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "price_einkauf",
+											"value": "25,000",
+											"type": "text"
+										},
+										{
+											"key": "price_aufschlag",
+											"value": "2555",
+											"type": "text"
+										},
+										{
+											"key": "price_verkauf",
+											"value": "045454",
+											"type": "text"
+										},
+										{
+											"key": "profit_pro_pcs",
+											"value": "120",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/assests/updateDrawers/65c62cd836d291a35f15cd8d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"assests",
+										"updateDrawers",
+										"65c62cd836d291a35f15cd8d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Drawers",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "images",
+											"type": "file",
+											"src": "/C:/Users/Welcome/Downloads/image 69.png"
+										},
+										{
+											"key": "name",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "configId",
+											"value": "000385",
+											"type": "text"
+										},
+										{
+											"key": "hersteller_Id",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "price_einkauf",
+											"value": "25,000",
+											"type": "text"
+										},
+										{
+											"key": "price_aufschlag",
+											"value": "30,555",
+											"type": "text"
+										},
+										{
+											"key": "price_verkauf",
+											"value": "2300",
+											"type": "text"
+										},
+										{
+											"key": "profit_pro_pcs",
+											"value": "25%",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/v1/assests/deleteDrawers/65c624921e32f4c8633b3491",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"assests",
+										"deleteDrawers",
+										"65c624921e32f4c8633b3491"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
